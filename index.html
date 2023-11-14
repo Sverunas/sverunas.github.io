@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="lt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puslapis su vidiniu CSS</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('your-background-image.jpg');
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("your-background-image.jpg");
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+      }
 
-        .container {
-            background-color: rgba(0, 0, 0, 0.7);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+      .container {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto; /* Adjusted for better mobile responsiveness */
+      }
 
-        .creditum {
-            max-width: 100%; /* Make the image responsive */
-        }
+      .creditum img {
+        max-width: 100%; /* Make the image responsive */
+        height: auto;
+      }
 
+      h1 {
+        font-size: 2em;
+        color: #fce90e;
+        text-shadow: 1px 1px 1px rgb(131, 238, 10);
+        text-align: center;
+      }
+
+      /* Media queries for responsive design */
+      @media (max-width: 1024px) {
         h1 {
-            font-size: 2em;
-            color: #fce90e;
-            text-shadow: 1px 1px 1px rgb(131, 238, 10);
-            text-align: center;
+          font-size: 1.5em;
         }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.2em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1em; /* Adjust font size for mobile screens */
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="container">
-        <div class="creditum">
-            <img src="creditum.png" alt="creditum">
-        </div>
-        <h1>Parduodamas domenas</h1>
-        <h1>creditum.lt</h1>
-        <h1>Tel.: +37062443275</h1>
+      <div class="creditum">
+        <img src="creditum.png" alt="creditum" />
+      </div>
+      <h1>Parduodamas domenas</h1>
+      <h1>creditum.lt</h1>
+      <h1>Tel.: +37062443275</h1>
     </div>
-</body>
+  </body>
 </html>
