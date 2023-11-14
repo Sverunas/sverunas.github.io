@@ -3,67 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puslapis su vidiniu CSS</title>
     <style>
       body {
+        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-image: url("your-background-image.jpg");
-        background-size: cover;
-        background-position: center;
-        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
       }
 
-      .container {
-        background-color: rgba(0, 0, 0, 0.7);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto; /* Adjusted for better mobile responsiveness */
-      }
-
-      .creditum img {
-        max-width: 100%; /* Make the image responsive */
-        height: auto;
-      }
-
-      h1 {
-        font-size: 2em;
-        color: #fce90e;
-        text-shadow: 1px 1px 1px rgb(131, 238, 10);
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
         text-align: center;
       }
 
-      /* Media queries for responsive design */
-      @media (max-width: 1024px) {
-        h1 {
-          font-size: 1.5em;
-        }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Naujas stilius */
+        padding: 1em;
+        flex-grow: 1;
+        background-color: yellow;
       }
 
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 1.2em;
-        }
+      section {
+        margin-bottom: 1em;
+        text-align: center; /* Naujas stilius */
       }
 
-      @media (max-width: 480px) {
-        h1 {
-          font-size: 1em; /* Adjust font size for mobile screens */
-        }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
       }
     </style>
+    <title>Parduodamas domenas</title>
   </head>
-
   <body>
-    <div class="container">
-      <div class="creditum">
+    <header>
+      <h1>Parduodamas Domenas</h1>
+    </header>
+
+    <main>
+      <section>
+        <h1>creditum.lt</h1>
         <img src="creditum.png" alt="creditum" />
-      </div>
-      <h1>Parduodamas domenas</h1>
-      <h1>creditum.lt</h1>
-      <h1>Tel.: +37062443275</h1>
-    </div>
+        <h3>Tel.: +37062443275</h3>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 creditum.lt</p>
+    </footer>
   </body>
 </html>
